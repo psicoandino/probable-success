@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soberanía Digital: tablero editorial de inteligencia pública para monitorear recursos, salud, educación, Estado y seguridad en Chile.">
+    <meta name="theme-color" content="#050505">
+    <meta property="og:title" content="Soberanía Digital">
+    <meta property="og:description" content="Briefings sintéticos para decisiones públicas, técnicas y estratégicas.">
+    <meta property="og:type" content="website">
+    <title>Soberanía Digital | Briefing de inteligencia pública</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="shell header-layout">
+            <a href="#all" class="brand" data-category="all" aria-label="Soberanía Digital, inicio">
+                <span class="brand-mark">SD</span>
+                <span class="brand-name">Soberanía Digital</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Secciones">
+                <a href="#all" data-category="all" class="nav-link is-active">Todo</a>
+                <a href="#recursos-energia" data-category="recursos-energia" class="nav-link">Recursos &amp; Energía</a>
+                <a href="#salud-educacion" data-category="salud-educacion" class="nav-link">Salud &amp; Educación</a>
+                <a href="#estado-seguridad" data-category="estado-seguridad" class="nav-link">Estado &amp; Seguridad</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="lead-section">
+            <div class="shell lead-layout">
+                <article class="lead-story" id="featuredArticle" aria-live="polite">
+                    <div class="story-kicker">Cargando briefing</div>
+                    <h1>Preparando el tablero editorial</h1>
+                    <p>El sistema está leyendo la base JSON local.</p>
+                </article>
+
+                <aside class="signal-panel" aria-label="Estado del sistema editorial">
+                    <div>
+                        <span class="metric-label">Actualización</span>
+                        <strong id="updatedAt">--</strong>
+                    </div>
+                    <div>
+                        <span class="metric-label">Cobertura</span>
+                        <strong id="coverageCount">--</strong>
+                    </div>
+                    <div>
+                        <span class="metric-label">Modo</span>
+                        <strong id="datasetMode">Demo</strong>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="feed-section shell" aria-labelledby="feedTitle">
+            <div class="feed-header">
+                <div>
+                    <p class="eyebrow" id="activeCategoryLabel">Todas las secciones</p>
+                    <h2 id="feedTitle">Últimas actualizaciones</h2>
+                </div>
+                <p class="feed-count" id="feedCount">0 notas</p>
+            </div>
+
+            <div class="news-grid" id="newsGrid" aria-live="polite"></div>
+            <p class="empty-state" id="emptyState" hidden>No hay notas para esta sección.</p>
+        </section>
+    </main>
+
+    <div class="panel-backdrop" id="panelBackdrop" hidden></div>
+
+    <aside class="reader-panel" id="readerPanel" aria-hidden="true" aria-labelledby="readerTitle" role="dialog">
+        <button class="icon-button close-panel" type="button" id="closePanel" aria-label="Cerrar análisis">
+            <span aria-hidden="true">×</span>
+        </button>
+
+        <div class="reader-scroll">
+            <p class="story-kicker" id="readerMeta">Análisis</p>
+            <h2 id="readerTitle"></h2>
+            <p class="reader-dek" id="readerDek"></p>
+
+            <dl class="reader-facts">
+                <div>
+                    <dt>Fuente</dt>
+                    <dd id="readerSource"></dd>
+                </div>
+                <div>
+                    <dt>Lectura</dt>
+                    <dd id="readerTime"></dd>
+                </div>
+                <div>
+                    <dt>Prioridad</dt>
+                    <dd id="readerPriority"></dd>
+                </div>
+            </dl>
+
+            <section class="reader-block">
+                <h3>Síntesis</h3>
+                <p id="readerSummary"></p>
+            </section>
+
+            <section class="reader-block">
+                <h3>Claves</h3>
+                <ul id="readerKeyPoints"></ul>
+            </section>
+
+            <section class="reader-block">
+                <h3>Ángulo local</h3>
+                <p id="readerLocalAngle"></p>
+            </section>
+
+            <a class="source-link" id="readerOriginal" href="#" target="_blank" rel="noreferrer">Ver fuente original</a>
+        </div>
+    </aside>
+
+    <footer class="site-footer">
+        <div class="shell footer-layout">
+            <p>Soberanía Digital</p>
+            <p>Interfaz estática preparada para GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <noscript>
+        <p class="noscript-warning">Esta interfaz necesita JavaScript para cargar el briefing desde el archivo de datos.</p>
+    </noscript>
+</body>
+</html>

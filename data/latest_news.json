@@ -1,0 +1,139 @@
+{
+  "mode": "Demo",
+  "updatedAt": "2026-05-07T09:00:00-04:00",
+  "sourceNote": "Dataset editorial de demostración. Sustituir por resultados verificados del scraper/NLP antes de publicar como medio informativo.",
+  "articles": [
+    {
+      "id": "csirt-ia-respuesta",
+      "featured": true,
+      "title": "CSIRT y automatización: qué mirar antes de prometer una respuesta pública más rápida",
+      "category": "estado-seguridad",
+      "categoryLabel": "Estado & Seguridad",
+      "source": "Briefing interno",
+      "publishedLabel": "Hoy",
+      "readingTime": "4 min",
+      "priority": "Alta",
+      "image": "assets/img/estado-seguridad.png",
+      "imageAlt": "Mapa abstracto de señales para Estado y ciberseguridad",
+      "dek": "La adopción de IA en equipos de respuesta a incidentes puede reducir fricción operativa, pero el valor real depende de trazabilidad, gobernanza y entrenamiento humano.",
+      "summary": "El punto periodístico no es vender una cifra de eficiencia, sino separar capacidad técnica de capacidad institucional. Un sistema de IA útil para ciberseguridad pública debe registrar decisiones, permitir auditoría posterior y mantener responsabilidad humana sobre alertas críticas.",
+      "keyPoints": [
+        "La automatización sirve mejor como priorizador de incidentes que como decisor final.",
+        "La métrica central debe ser tiempo de contención verificable, no solo tiempo de detección.",
+        "El riesgo editorial está en publicar promesas tecnológicas sin evidencia operativa."
+      ],
+      "localAngle": "Para Chile, la historia relevante está en compras públicas, protocolos entre servicios y madurez de los equipos regionales que reciben las alertas.",
+      "originalUrl": "https://www.csirt.gob.cl/"
+    },
+    {
+      "id": "atacama-perovskita",
+      "featured": false,
+      "title": "Perovskita en Atacama: oportunidad energética o titular prematuro",
+      "category": "recursos-energia",
+      "categoryLabel": "Recursos & Energía",
+      "source": "Síntesis técnica",
+      "publishedLabel": "Hoy",
+      "readingTime": "3 min",
+      "priority": "Media",
+      "image": "assets/img/recursos-energia.png",
+      "imageAlt": "Trama abstracta inspirada en energía solar y territorio árido",
+      "dek": "Los avances de laboratorio en celdas solares necesitan pasar por estrés térmico, polvo, radiación y costos de encapsulado antes de convertirse en política industrial.",
+      "summary": "La noticia tecnológica necesita una lectura de madurez. Atacama es un laboratorio natural extremo, pero no todo récord de eficiencia se traduce en despliegue. La cobertura debe exigir horizonte de degradación, proveedor de materiales y costo nivelado estimado.",
+      "keyPoints": [
+        "Distinguir eficiencia de laboratorio, piloto y producción industrial.",
+        "Preguntar por degradación bajo UV, polvo y amplitud térmica.",
+        "Cruzar la promesa con cadenas de suministro y permisos locales."
+      ],
+      "localAngle": "El ángulo chileno está en si la innovación aumenta soberanía energética o solo importa componentes críticos sin transferencia tecnológica.",
+      "originalUrl": "https://www.cochilco.cl/"
+    },
+    {
+      "id": "wearables-cardiacos",
+      "featured": false,
+      "title": "Wearables y salud pública: del dato cardíaco al protocolo clínico",
+      "category": "salud-educacion",
+      "categoryLabel": "Salud & Educación",
+      "source": "Monitor salud digital",
+      "publishedLabel": "Hace 5 horas",
+      "readingTime": "4 min",
+      "priority": "Media",
+      "image": "assets/img/salud-educacion.png",
+      "imageAlt": "Visual abstracto de señales biométricas y aprendizaje",
+      "dek": "Un algoritmo de detección no cambia el sistema por sí solo: la pregunta central es cómo entra la alerta al flujo clínico sin saturar atención primaria.",
+      "summary": "La promesa de detección temprana debe evaluarse junto con falsos positivos, privacidad y capacidad de seguimiento. Para informar bien, conviene observar validación local, diversidad de la muestra y ruta de derivación.",
+      "keyPoints": [
+        "La sensibilidad del modelo importa menos si no existe protocolo de confirmación.",
+        "Los datos de wearables comerciales tienen sesgos de acceso y edad.",
+        "La integración con ficha clínica define si hay impacto real."
+      ],
+      "localAngle": "En Chile, la brecha está entre pilotos de innovación y escalamiento en redes públicas con equipos sobrecargados.",
+      "originalUrl": "https://www.minsal.cl/"
+    },
+    {
+      "id": "intercepcion-legal-privacidad",
+      "featured": false,
+      "title": "Intercepción legal de comunicaciones: la palabra clave es control democrático",
+      "category": "estado-seguridad",
+      "categoryLabel": "Estado & Seguridad",
+      "source": "Análisis regulatorio",
+      "publishedLabel": "Ayer",
+      "readingTime": "5 min",
+      "priority": "Alta",
+      "image": "assets/img/estado-seguridad.png",
+      "imageAlt": "Mapa abstracto de señales para Estado y ciberseguridad",
+      "dek": "Cualquier cambio normativo sobre comunicaciones debe leerse junto a proporcionalidad, supervisión judicial y transparencia estadística.",
+      "summary": "La cobertura debe evitar dos trampas: tecnicismo opaco o alarma genérica. Lo relevante es quién autoriza, quién audita, cómo se informa ex post y qué recursos tiene la defensa para impugnar abusos.",
+      "keyPoints": [
+        "La vigilancia excepcional requiere límites precisos y trazabilidad.",
+        "La transparencia agregada permite control sin revelar operaciones sensibles.",
+        "El debate técnico debe incluir capacidades reales de fiscalización."
+      ],
+      "localAngle": "La discusión chilena necesita conectar seguridad, derechos digitales y confianza institucional, no tratarlos como agendas separadas.",
+      "originalUrl": "https://www.diariooficial.interior.gob.cl/"
+    },
+    {
+      "id": "hidrogeno-magallanes",
+      "featured": false,
+      "title": "Hidrógeno verde en Magallanes: la fase piloto necesita una contabilidad territorial",
+      "category": "recursos-energia",
+      "categoryLabel": "Recursos & Energía",
+      "source": "Monitor energía",
+      "publishedLabel": "Ayer",
+      "readingTime": "3 min",
+      "priority": "Media",
+      "image": "assets/img/recursos-energia.png",
+      "imageAlt": "Trama abstracta inspirada en energía solar y territorio árido",
+      "dek": "La señal de exportación importa, pero la evaluación debe sumar agua, puertos, transmisión, empleo local y trazabilidad de emisiones.",
+      "summary": "El hito piloto no debe confundirse con viabilidad sistémica. Una pauta robusta contrasta anuncios de inversión con permisos, infraestructura logística y compromisos verificables de comunidad.",
+      "keyPoints": [
+        "Separar toneladas proyectadas de toneladas certificadas.",
+        "Exigir metodología de emisiones de ciclo completo.",
+        "Mirar empleo local calificado, no solo inversión total anunciada."
+      ],
+      "localAngle": "Magallanes puede ser frontera energética o zona de sacrificio sofisticada; la diferencia está en gobernanza temprana.",
+      "originalUrl": "https://energia.gob.cl/"
+    },
+    {
+      "id": "alfabetizacion-digital-maule",
+      "featured": false,
+      "title": "Alfabetización digital rural: medir conexión no es medir autonomía",
+      "category": "salud-educacion",
+      "categoryLabel": "Salud & Educación",
+      "source": "Educación pública",
+      "publishedLabel": "Hace 2 días",
+      "readingTime": "3 min",
+      "priority": "Baja",
+      "image": "assets/img/salud-educacion.png",
+      "imageAlt": "Visual abstracto de señales biométricas y aprendizaje",
+      "dek": "La brecha digital rural no se cierra solo con dispositivos; requiere acompañamiento, contenidos pertinentes y continuidad presupuestaria.",
+      "summary": "Para evaluar un plan educativo digital, la pauta debe mirar permanencia, competencias aplicadas y soporte local. El simple número de beneficiarios puede esconder abandono, baja apropiación o dependencia del proveedor.",
+      "keyPoints": [
+        "La métrica fuerte es uso competente a tres o seis meses.",
+        "Los facilitadores locales suelen explicar más impacto que la tecnología.",
+        "El contenido debe responder a trámites, salud, educación y economía local."
+      ],
+      "localAngle": "En el Maule, la pregunta es si la política conversa con escuelas, municipios y organizaciones productivas rurales.",
+      "originalUrl": "https://www.mineduc.cl/"
+    }
+  ]
+}

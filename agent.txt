@@ -1,0 +1,61 @@
+Spot on observation. In that initial MVT (Minimum Viable Technical) prototype, those navigation links are just static HTML anchors (`#`). They jump to an ID on the same page, which I only created for the first section to keep the code brief.
+
+Moving from a static mock-up to a functional system requires defining the **interaction architecture**. As an Information Systems Engineer, you know that every click is a state change. We need to decide how the system handles those state changes to maximize value for the user.
+
+Here is the breakdown of the expected functionality, your options for article interaction, and the "senior finest way" to architect this using a sovereign, framework-free approach.
+
+---
+
+### 1. Expected Functionality of Section Links (Navigation)
+
+When a user clicks "Recursos & Energía", the grid needs to update to show only those articles.
+
+* **The Junior Way:** A full page reload pointing to a server-rendered page (e.g., `[site.com/energia.html](https://site.com/energia.html)`). It's slow and breaks the immersive experience.
+* **The Senior Way (Asynchronous Filtering):** The page does not reload. Vanilla JavaScript intercepts the click, filters the existing data array in the browser's memory, and re-renders the DOM instantly. You update the URL using the browser's `History API` (`window.history.pushState`) so the user can still share the link (`[site.com/#energia](https://site.com/#energia)`), but the experience feels as fast as a native app.
+
+### 2. Options: What must happen when a notice is pressed?
+
+You have three strategic options for the "Read More" flow. For a target audience of analysts and decision-makers, time is their most valuable asset.
+
+* **Option A: The Aggregator (External Redirect)**
+* *Action:* Clicking the card opens the original source (e.g., Cochilco or SciTechDaily) in a new tab.
+* *Verdict:* **Low Value.** You become a mere index. You lose the user, and you don't get to showcase your NLP summarization value.
+
+
+* **Option B: The Distilled Page (Dedicated Internal View)**
+* *Action:* The user goes to a new page on your site containing the NLP-processed summary, the extracted bullet points, and a clean UI.
+* *Verdict:* **Standard & Solid.** Excellent for SEO and deep reading. But it requires the user to click "back" to return to the feed.
+
+
+* **Option C: The "Bloomberg Terminal" Overlap (Slide-out Panel / Off-canvas)**
+* *Action:* The user clicks a card, and instead of leaving the page, a sleek, dark-mode side-panel slides in from the right. It contains the high-value summary, key metrics, and local context. The main feed dims slightly in the background. If they want the raw data, there's a small "Go to original source" button inside the panel.
+* *Verdict:* **The Finest UX.** This is pure efficiency. It allows the user to scan the grid, open a summary, close it, and immediately click the next one without losing their scroll position.
+
+
+
+### 3. The "Senior Finest Way": Architecture & Development
+
+To build this, you don't need heavy frameworks like React or Angular, which add unnecessary bloat. You can achieve a blazing-fast, sovereign digital space using **Vanilla JavaScript, HTML, and CSS**, paired with a decoupled data architecture.
+
+Here is the blueprint for the architecture:
+
+**A. The Decoupled Backend (The Engine)**
+
+* Your Python scraper and NLP model run on a schedule (cron job) on a secure server.
+* Once it processes the news, it doesn't query a database on every user visit. Instead, it generates a static **JSON file** (e.g., `latest_news.json`) containing the processed titles, summaries, and categories.
+
+**B. The Stateless Frontend (The Interface)**
+
+* Your web interface is just static HTML/CSS files hosted anywhere.
+* On page load, Vanilla JavaScript fetches that lightweight `latest_news.json` file.
+* **DOM Injection:** A JS function maps through the JSON data and dynamically injects the HTML cards into the `.news-grid`.
+
+**C. The Interaction Logic (Vanilla JS State Management)**
+
+* When a user clicks a section in the header, JavaScript clears the grid and re-injects only the JSON objects matching that category.
+* When a user clicks an article, JavaScript grabs the NLP summary from the JSON object and injects it into a pre-built `<aside>` HTML element (the slide-out panel), toggling a CSS class to animate it onto the screen.
+
+**Why is this the finest way?**
+It embodies structural rigor. By keeping the UI completely separated from the backend scraping engine, your site will load in milliseconds, cost almost nothing to host, and remain completely immune to database crashes. It is a sovereign, self-contained system.
+
+Which interaction model for reading the news appeals to you more: the dedicated distilled page (Option B) or the dynamic slide-out panel (Option C)?
