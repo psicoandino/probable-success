@@ -1,0 +1,38 @@
+{
+  "dialogues": [
+    {
+      "id": "dialogue-intro",
+      "lines": [
+        {
+          "speaker": "Ser extraño",
+          "text": "Has llegado al umbral. La cueva aguarda más adelante."
+        },
+        {
+          "speaker": "Ser extraño",
+          "text": "Dentro habita una presencia. Enfréntala y regresa con vida."
+        },
+        {
+          "speaker": "Ser extraño",
+          "text": "Sigue el sendero marcado hasta la entrada."
+        }
+      ]
+    },
+    {
+      "id": "dialogue-outro",
+      "lines": [
+        {
+          "speaker": "Ser extraño",
+          "text": "Has retornado de las profundidades de la cueva."
+        },
+        {
+          "speaker": "Ser extraño",
+          "text": "El umbral ha sido recorrido con éxito."
+        },
+        {
+          "speaker": "Ser extraño",
+          "text": "La prueba de esta vertical slice ha concluido."
+        }
+      ]
+    }
+  ]
+}

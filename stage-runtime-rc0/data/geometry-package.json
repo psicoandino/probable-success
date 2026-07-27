@@ -1,0 +1,234 @@
+{
+  "packageFormat": "PSICOANDINO_GEOMETRY_PACKAGE",
+  "packageFormatVersion": "0.2",
+  "package": {
+    "name": "Demo Stage-000 Geometry Package",
+    "author": "PSICOANDINO ARCHAEOLOGY",
+    "version": "0.2.0",
+    "description": "Paquete geométrico mínimo adquirido para renderizar stage-000 y la vertical slice."
+  },
+  "geometry": {
+    "version": "RC0.4",
+    "model": "layer-slot-subslot-token-glyph",
+    "size": 10,
+    "glyphSize": 8,
+    "slots": 10,
+    "subslotsPerSlot": 10,
+    "atom": "empty-or-token",
+    "tokens": [
+      "oled",
+      "hueso",
+      "cobre",
+      "musgo",
+      "mostaza",
+      "sangre",
+      "amatista"
+    ],
+    "terrain": [
+      [{ "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }],
+      [{ "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }],
+      [{ "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 2, "variant": 0 }, { "slot": 2, "variant": 0 }, { "slot": 2, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }],
+      [{ "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 2, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }],
+      [{ "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 2, "variant": 0 }, { "slot": 2, "variant": 0 }, { "slot": 2, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }],
+      [{ "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 2, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }],
+      [{ "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 2, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }],
+      [{ "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 2, "variant": 0 }, { "slot": 3, "variant": 0 }, { "slot": 0, "variant": 0 }],
+      [{ "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }],
+      [{ "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }, { "slot": 0, "variant": 0 }]
+    ],
+    "entity": [
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, { "slot": 0, "variant": 0 }, null, null, null, { "slot": 1, "variant": 0 }, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, { "slot": 2, "variant": 0 }, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null]
+    ],
+    "glyphs": {
+      "terrain": [
+        [
+          [
+            [null, null, null, null, null, null, null, null],
+            [null, "musgo", null, null, null, null, "musgo", null],
+            [null, null, null, null, null, null, null, null],
+            [null, null, null, "hueso", null, null, null, null],
+            [null, null, null, null, null, null, null, null],
+            [null, "hueso", null, null, null, "musgo", null, null],
+            [null, null, null, null, null, null, null, null],
+            [null, null, null, "musgo", null, null, null, null]
+          ],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null]
+        ],
+        [
+          [
+            ["oled", "oled", "oled", "oled", "oled", "oled", "oled", "oled"],
+            ["oled", "cobre", "cobre", "cobre", "cobre", "cobre", "cobre", "oled"],
+            ["oled", "cobre", "oled", "cobre", "cobre", "oled", "cobre", "oled"],
+            ["oled", "cobre", "cobre", "cobre", "cobre", "cobre", "cobre", "oled"],
+            ["oled", "cobre", "oled", "cobre", "cobre", "oled", "cobre", "oled"],
+            ["oled", "cobre", "cobre", "cobre", "cobre", "cobre", "cobre", "oled"],
+            ["oled", "cobre", "cobre", "cobre", "cobre", "cobre", "cobre", "oled"],
+            ["oled", "oled", "oled", "oled", "oled", "oled", "oled", "oled"]
+          ],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null]
+        ],
+        [
+          [
+            [null, null, "mostaza", "mostaza", "mostaza", "mostaza", null, null],
+            [null, "mostaza", "hueso", "mostaza", "mostaza", "hueso", "mostaza", null],
+            [null, "mostaza", "mostaza", "hueso", "mostaza", "mostaza", "mostaza", null],
+            [null, "mostaza", "mostaza", "mostaza", "hueso", "mostaza", "mostaza", null],
+            [null, "mostaza", "hueso", "mostaza", "mostaza", "mostaza", "mostaza", null],
+            [null, "mostaza", "mostaza", "mostaza", "hueso", "mostaza", "mostaza", null],
+            [null, "mostaza", "hueso", "mostaza", "mostaza", "hueso", "mostaza", null],
+            [null, null, "mostaza", "mostaza", "mostaza", "mostaza", null, null]
+          ],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null]
+        ],
+        [
+          [
+            [null, "cobre", "cobre", "cobre", "cobre", "cobre", "cobre", null],
+            ["cobre", "amatista", "amatista", "amatista", "amatista", "amatista", "amatista", "cobre"],
+            ["cobre", "amatista", "oled", "oled", "oled", "oled", "amatista", "cobre"],
+            ["cobre", "amatista", "oled", "oled", "oled", "oled", "amatista", "cobre"],
+            ["cobre", "amatista", "oled", "oled", "oled", "oled", "amatista", "cobre"],
+            ["cobre", "amatista", "oled", "oled", "oled", "oled", "amatista", "cobre"],
+            ["cobre", "amatista", "oled", "oled", "oled", "oled", "amatista", "cobre"],
+            ["cobre", "cobre", "oled", "oled", "oled", "oled", "cobre", "cobre"]
+          ],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null]
+        ],
+        [ [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null] ],
+        [ [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null] ],
+        [ [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null] ],
+        [ [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null] ],
+        [ [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null] ],
+        [ [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null] ]
+      ],
+      "entity": [
+        [
+          [
+            [null, null, null, "mostaza", "mostaza", null, null, null],
+            [null, null, "mostaza", "hueso", "hueso", "mostaza", null, null],
+            [null, null, "mostaza", "hueso", "hueso", "mostaza", null, null],
+            [null, "mostaza", "hueso", "oled", "oled", "hueso", "mostaza", null],
+            [null, "mostaza", "hueso", "hueso", "hueso", "hueso", "mostaza", null],
+            ["mostaza", "hueso", "hueso", "hueso", "hueso", "hueso", "hueso", "mostaza"],
+            ["mostaza", "mostaza", "mostaza", "mostaza", "mostaza", "mostaza", "mostaza", "mostaza"],
+            [null, null, "oled", null, null, "oled", null, null]
+          ],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null]
+        ],
+        [
+          [
+            [null, null, "amatista", "amatista", "amatista", "amatista", null, null],
+            [null, "amatista", "hueso", "hueso", "hueso", "hueso", "amatista", null],
+            ["amatista", "hueso", "oled", "hueso", "hueso", "oled", "hueso", "amatista"],
+            ["amatista", "hueso", "hueso", "amatista", "amatista", "hueso", "hueso", "amatista"],
+            ["amatista", "hueso", "amatista", "hueso", "hueso", "amatista", "hueso", "amatista"],
+            ["amatista", "hueso", "hueso", "hueso", "hueso", "hueso", "hueso", "amatista"],
+            [null, "amatista", "hueso", "hueso", "hueso", "hueso", "amatista", null],
+            [null, null, "amatista", "amatista", "amatista", "amatista", null, null]
+          ],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null]
+        ],
+        [
+          [
+            [null, null, "cobre", "cobre", "cobre", "cobre", null, null],
+            [null, "cobre", "hueso", "hueso", "hueso", "hueso", "cobre", null],
+            ["cobre", "hueso", "cobre", "cobre", "cobre", "cobre", "hueso", "cobre"],
+            ["cobre", "hueso", "cobre", "hueso", "hueso", "cobre", "hueso", "cobre"],
+            ["cobre", "hueso", "cobre", "cobre", "cobre", "cobre", "hueso", "cobre"],
+            [null, "cobre", "hueso", "hueso", "hueso", "hueso", "cobre", null],
+            [null, null, "cobre", "cobre", "cobre", "cobre", null, null],
+            [null, null, null, "cobre", "cobre", null, null, null]
+          ],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null]
+        ],
+        [
+          [
+            [null, "musgo", null, null, null, null, "musgo", null],
+            ["musgo", "hueso", "musgo", null, null, "musgo", "hueso", "musgo"],
+            ["musgo", "hueso", "hueso", "musgo", "musgo", "hueso", "hueso", "musgo"],
+            [null, "musgo", "sangre", "hueso", "hueso", "sangre", "musgo", null],
+            [null, "musgo", "hueso", "hueso", "hueso", "hueso", "musgo", null],
+            [null, null, "musgo", "hueso", "hueso", "musgo", null, null],
+            [null, "musgo", "hueso", "musgo", "musgo", "hueso", "musgo", null],
+            [null, "musgo", null, null, null, null, "musgo", null]
+          ],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null]
+        ],
+        [
+          [
+            ["sangre", null, null, null, null, null, null, "sangre"],
+            ["sangre", "sangre", null, null, null, null, "sangre", "sangre"],
+            [null, "sangre", "sangre", "mostaza", "mostaza", "sangre", "sangre", null],
+            [null, "sangre", "oled", "sangre", "sangre", "oled", "sangre", null],
+            [null, "sangre", "sangre", "sangre", "sangre", "sangre", "sangre", null],
+            [null, null, "sangre", "mostaza", "mostaza", "sangre", null, null],
+            [null, "sangre", "sangre", null, null, "sangre", "sangre", null],
+            ["sangre", null, null, null, null, null, null, "sangre"]
+          ],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null],
+          [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null], [null, null, null, null, null, null, null, null]
+        ],
+        [ [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null] ],
+        [ [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null] ],
+        [ [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null] ],
+        [ [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null] ],
+        [ [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null], [null,null,null,null,null,null,null,null] ]
+      ]
+    }
+  },
+  "palette": {
+    "mode": "p2",
+    "presence": "cobre",
+    "free": {
+      "oled": "#000000",
+      "hueso": "#f5f3ec",
+      "cobre": "#248692",
+      "musgo": "#6d7c50",
+      "mostaza": "#b78627",
+      "sangre": "#c73a4a",
+      "amatista": "#7b4f9d"
+    }
+  },
+  "catalog": {
+    "terrain": [
+      { "name": "walkable", "variants": [{ "name": "Suelo caminable" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "wall", "variants": [{ "name": "Muro de roca" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "path", "variants": [{ "name": "Sendero marcado" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "cave_entrance", "variants": [{ "name": "Entrada a cueva" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "Terrain 4", "variants": [{ "name": "Subslot 0" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "Terrain 5", "variants": [{ "name": "Subslot 0" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "Terrain 6", "variants": [{ "name": "Subslot 0" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "Terrain 7", "variants": [{ "name": "Subslot 0" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "Terrain 8", "variants": [{ "name": "Subslot 0" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "Terrain 9", "variants": [{ "name": "Subslot 0" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] }
+    ],
+    "entity": [
+      { "name": "player", "variants": [{ "name": "Jugador" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "strange_being", "variants": [{ "name": "Ser extraño" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "cave_marker", "variants": [{ "name": "Marcador de cueva" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "encountered_creature", "variants": [{ "name": "Criatura de encuentro" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "battle_creature", "variants": [{ "name": "Criatura de combate 3x6" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "Entity 5", "variants": [{ "name": "Subslot 0" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "Entity 6", "variants": [{ "name": "Subslot 0" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "Entity 7", "variants": [{ "name": "Subslot 0" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "Entity 8", "variants": [{ "name": "Subslot 0" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] },
+      { "name": "Entity 9", "variants": [{ "name": "Subslot 0" }, { "name": "Subslot 1" }, { "name": "Subslot 2" }, { "name": "Subslot 3" }, { "name": "Subslot 4" }, { "name": "Subslot 5" }, { "name": "Subslot 6" }, { "name": "Subslot 7" }, { "name": "Subslot 8" }, { "name": "Subslot 9" }] }
+    ]
+  }
+}

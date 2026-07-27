@@ -1,0 +1,73 @@
+{
+  "bindingsVersion": "0.1",
+  "stageId": "stage-000",
+  "packageFormat": "PSICOANDINO_GEOMETRY_PACKAGE",
+  "packageFormatVersion": "0.2",
+  "terrain": {
+    "walkable": {
+      "layer": "terrain",
+      "slot": 0,
+      "subslot": 0,
+      "semanticName": "walkable",
+      "description": "Suelo caminable"
+    },
+    "wall": {
+      "layer": "terrain",
+      "slot": 1,
+      "subslot": 0,
+      "semanticName": "wall",
+      "description": "Muro de roca"
+    },
+    "path": {
+      "layer": "terrain",
+      "slot": 2,
+      "subslot": 0,
+      "semanticName": "path",
+      "description": "Sendero marcado"
+    },
+    "cave_entrance": {
+      "layer": "terrain",
+      "slot": 3,
+      "subslot": 0,
+      "semanticName": "cave_entrance",
+      "description": "Entrada a cueva"
+    }
+  },
+  "entities": {
+    "player": {
+      "layer": "entity",
+      "slot": 0,
+      "subslot": 0,
+      "semanticName": "player",
+      "description": "Jugador"
+    },
+    "strange_being": {
+      "layer": "entity",
+      "slot": 1,
+      "subslot": 0,
+      "semanticName": "strange_being",
+      "description": "Ser extraño"
+    },
+    "cave_marker": {
+      "layer": "entity",
+      "slot": 2,
+      "subslot": 0,
+      "semanticName": "cave_marker",
+      "description": "Marcador de cueva"
+    },
+    "encountered_creature": {
+      "layer": "entity",
+      "slot": 3,
+      "subslot": 0,
+      "semanticName": "encountered_creature",
+      "description": "Criatura de encuentro pasiva en cueva"
+    },
+    "battle_creature": {
+      "layer": "entity",
+      "slot": 4,
+      "subslot": 0,
+      "semanticName": "battle_creature",
+      "description": "Criatura de combate 3x6 en cueva"
+    }
+  }
+}

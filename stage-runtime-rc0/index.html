@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PSICOANDINO · Stage Runtime RC0</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- STAGE RUNTIME VIEWPORT & HUD -->
+  <div id="stage-container" class="stage-wrapper">
+    <div class="stage-header">
+      <div>
+        <div class="eyebrow">PSICOANDINO · Stage Runtime RC0</div>
+        <h1>Stage-000 Demo Threshold</h1>
+      </div>
+      <div class="demo-badge" id="runtimeStateBadge">STAGE ACTIVE</div>
+    </div>
+
+    <div class="hud-panel">
+      <div class="hud-metric">
+        <label>Position</label>
+        <span id="hudPos">(1, 1)</span>
+      </div>
+      <div class="hud-metric">
+        <label>Facing</label>
+        <span id="hudFacing">RIGHT</span>
+      </div>
+      <div class="hud-metric">
+        <label>Intro Status</label>
+        <span id="hudIntro">PENDING</span>
+      </div>
+      <div class="hud-metric">
+        <label>Dungeon Return</label>
+        <span id="hudReturned">NO</span>
+      </div>
+    </div>
+
+    <div class="canvas-container">
+      <canvas id="stageCanvas" width="576" height="480"></canvas>
+    </div>
+
+    <div class="controls-legend">
+      <strong>Movement:</strong> WASD / Arrow Keys &nbsp;|&nbsp; 
+      <strong>Interact / Talk:</strong> E / Enter &nbsp;|&nbsp; 
+      <strong>Advance Dialogue:</strong> E / Enter / Space
+    </div>
+  </div>
+
+  <!-- DIALOGUE OVERLAY -->
+  <div id="dialogueOverlay" class="dialogue-overlay hidden">
+    <div class="dialogue-box">
+      <div class="dialogue-speaker" id="dialogueSpeaker">Speaker Name</div>
+      <div class="dialogue-text" id="dialogueText">Dialogue line text goes here...</div>
+      <div class="dialogue-prompt">[ Press E, ENTER or SPACE to continue ]</div>
+    </div>
+  </div>
+
+  <!-- DEMO COMPLETE BANNER -->
+  <div id="demoCompleteModal" class="demo-modal hidden">
+    <div class="demo-card">
+      <h2>DEMO COMPLETE</h2>
+      <p>The PSICOANDINO Stage Runtime RC0 vertical slice has been successfully executed from start to finish.</p>
+      <p style="color: var(--copper); font-size: 0.85rem;">Stage-000 threshold explored → Cave entrance triggered → Dungeon & Battle runtimes executed → Return point reached → Outro dialogue completed.</p>
+      <div class="demo-badge">Vertical Slice Clear · 100% Pass</div>
+    </div>
+  </div>
+
+  <!-- PRESERVED STORY RUNTIME UI (REUSED DOM) -->
+  <section id="story" class="screen"><div class="story-layout"><main class="shell"><div class="topbar"><div><p class="eyebrow">EXPEDITION <span id="expeditionCode"></span></p><h1 class="title">FLOOR <span id="floorNumber">0</span></h1></div><div class="metric"><span>Elapsed</span><strong id="floorTime">0.0 s</strong></div></div><section id="viewport" class="viewport" aria-label="15 by 11 viewport into a 100 by 100 procedural floor"></section><div id="storyStatus" class="status">EXPLORE</div><p class="muted" style="text-align:center">Move: WASD / arrows · Encounter: occupy the same tile as an enemy · Exit unlocks after every enemy is defeated.</p></main><aside class="shell"><section class="card"><h2>Floor state</h2><div class="metric-grid"><div class="metric"><span>Enemies</span><strong id="floorEnemies">0</strong></div><div class="metric"><span>Steps</span><strong id="floorSteps">0</strong></div><div class="metric"><span>Encounters</span><strong id="floorEncounters">0</strong></div><div class="metric"><span>Hits received</span><strong id="floorHits">0</strong></div></div></section><section class="card"><h2>Discovery map</h2><p class="muted">Reconstructed from observed terrain. The stairs remain visible as the fixed destination.</p><div id="minimap" class="minimap" aria-label="Discovery-based minimap with persistent stairs marker"></div></section><button id="abandonExpedition" class="btn danger">Abandon expedition</button></aside></div></section>
+
+  <!-- PRESERVED BATTLE RUNTIME UI (REUSED DOM) -->
+  <section id="battle" class="screen"><div class="battle-layout"><main class="shell"><div class="topbar"><div><p class="eyebrow"><span id="battleContextLabel">ENCOUNTER · FLOOR</span> <span id="battleFloor">0</span></p><h1 class="title" style="font-size:clamp(1.8rem,5vw,3.7rem)"><span id="battlePlayerName"></span> VS <span id="battleEnemyName"></span></h1></div><div class="metric"><span>Battle time</span><strong id="battleTime">0.0 s</strong></div></div><section id="arena" class="arena"></section><div id="battleStatus" class="status">BATTLE ACTIVE</div><p class="muted" style="text-align:center">Move: WASD / arrows · Fire: Space</p><div class="toolbar" style="justify-content:center"><button id="exitBattleTest" class="btn hidden">Return to creation</button></div></main><aside class="shell"><section class="card"><h2>Enemy difficulty</h2><div class="kpi-wrap"><div class="profile-line"><strong id="difficultyScore">0</strong><span class="muted">/ 100</span><span id="difficultyLabel" class="badge">LOW</span></div><div class="kpi-track"><div id="difficultyMarker" class="kpi-marker"></div></div><div class="kpi-labels"><span>SANGRE · 0</span><span>COBRE · 100</span></div><p id="difficultyExplanation" class="muted"></p></div></section><section class="card"><h2>Runtime</h2><div class="metric-grid"><div class="metric"><span>Enemy HP</span><strong id="enemyHp"></strong></div><div class="metric"><span>Hits received</span><strong id="battleHitsReceived">0</strong></div><div class="metric"><span>Shots</span><strong id="battleShots">0</strong></div><div class="metric"><span>Hits dealt</span><strong id="battleHitsDealt">0</strong></div></div><div style="margin-top:12px"><div class="profile-line" style="justify-content:space-between"><span>Fire load</span><strong id="cooldownPercent">100%</strong></div><div class="track"><div id="cooldownFill" class="fill"></div></div></div></section></aside></div></section>
+
+  <!-- STUB ELEMENTS TO PRESERVE STORY ENGINE COMPATIBILITY WITHOUT ERRORS -->
+  <div style="display:none">
+    <section id="home" class="screen"><span id="homeUsername"></span><button id="editUser"></button><button id="newCharacter"></button><button id="startStory"></button><button id="openHistory"></button><div id="roster"></div><div id="profileSummary"></div><div id="recentExpeditions"></div></section>
+    <section id="user" class="screen"><input id="usernameInput"><button id="saveUser"></button><button id="cancelUser"></button></section>
+    <section id="character" class="screen"><input id="characterName"><select id="characterFigure"><option value="triangle">t</option></select><input id="characterColor"><div id="characterPreview"></div><div id="stats"></div><span id="assignedPoints"></span><button id="saveCharacter"></button><button id="cancelCharacter"></button><div id="liveTestArena"></div><button id="resetLiveTest"></button><span id="liveTotemHp"></span><span id="liveTestTime"></span><span id="liveTestShots"></span><span id="liveTestAccuracy"></span><div id="liveCooldownFill"></div><span id="liveCooldownPercent"></span><span id="evidenceDamage"></span><span id="evidenceCadence"></span><span id="evidenceSpeed"></span><span id="evidenceMobility"></span><span id="evidenceHitsToDestroy"></span><span id="evidenceAccuracy"></span><div id="evidenceAccuracyBar"></div><span id="evidenceProgress"></span><div id="evidenceProgressBar"></div><div id="liveEventLog"></div></section>
+    <section id="worldMap" class="screen"><span id="mapCharacterName"></span><button id="mapHome"></button><div id="worldMapCanvas"></div><div id="mapDungeonGlyph"></div><span id="mapDungeonName"></span><p id="mapDungeonDescription"></p><div id="mapDungeonMeta"></div><button id="enterDungeon"></button></section>
+    <section id="floorSummary" class="screen"><p id="floorSummaryText"></p><div id="floorSummaryMetrics"></div><div id="floorEncounterTable"></div><button id="nextFloor"></button><button id="floorHome"></button></section>
+    <section id="expeditionSummary" class="screen"><p id="expeditionHeadline"></p><div id="expeditionMetrics"></div><svg id="difficultyChart"></svg><svg id="durationChart"></svg><div id="expeditionFloorTable"></div><button id="newExpeditionSame"></button><button id="expeditionHome"></button><button id="expeditionHistory"></button></section>
+    <section id="history" class="screen"><button id="historyHome"></button><div id="historyOverview"></div><div id="historyExpeditions"></div><div id="historyCharacters"></div></section>
+  </div>
+
+  <!-- SCRIPT INCLUSIONS -->
+  <script src="story-engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
